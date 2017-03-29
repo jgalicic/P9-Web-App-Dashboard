@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 //Close Alert box when x is clicked
 $('.close-x').click(function() {
-  $(this).parent().slideUp(300)
+  $(this).parent().slideUp(300);
 });
 
 
@@ -24,13 +24,13 @@ $('#message-user-form').submit(function() {
         alert('Please select a user and write a message.');
         return false;
     } else if ($('#message-user-form input').val() == '') {
-    	alert('Please select a user.');
-    	return false;
+        alert('Please select a user.');
+        return false;
     } else if ($('#user-message-id').val() == '') {
-    	alert('Please write a message.');
-    	return false;
+        alert('Please write a message.');
+        return false;
     } else {
-    	alert('Your message has been sent!');
+        alert('Your message has been sent!');
     }
 });
 
@@ -48,7 +48,7 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
 
 // AutoComplete plugin
 $(function(){
@@ -89,7 +89,7 @@ function load(){
 
 function wis(){
     location.reload();
-    localStorage.clear()
+    localStorage.clear();
 
 }
 
@@ -100,8 +100,8 @@ load();
 
  document.getElementById("time-zone").onchange = function() {
      localStorage['time-zone'] = document.getElementById("time-zone").value;
-    }
+    };
     window.onload= function(){
         if(localStorage['time-zone'])
             document.getElementById("time-zone").value = localStorage['time-zone'];
-   }
+   };

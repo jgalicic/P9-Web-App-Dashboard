@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="plugins/autoComplete/jquery.auto-complete.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yahoo/pure-release/v0.6.0/pure-min.css">
+
+    <link rel="stylesheet" href="plugins/auto-complete/jquery.auto-complete.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="home">
+      <h1><strong>Your</strong>App<sup style="vertical-align: top; position: relative; top: 14px;">TM</sup></h1>
+    </div>
+    <div class="bell-icon">
+      <div id="indicator" class="new-messages"></div>
+      <img src="icons/icon-bell.svg" height="30" width="30" alt="bell">
+    </div>
+    <div class="avatar">
+      <img src="http://lorempixel.com/50/50/people/10" alt="avatar picture"/>
+      <p>Alex Anderson</p>
+    </div>
+  </header>
+
+  <div class="mega-wrapper">
+
+    <div class="sidebar">
+      <a href="index.html" ><img src="icons/icon-dashboard.svg" height="40" alt="home"></a>
+      <a href="pages/members.html"><img src="icons/icon-members.svg" height="40" alt="members"></a>
+      <a href="pages/visits.html"><img src="icons/icon-visits.svg" height="40" alt="visits"></a>
+      <a href="pages/settings.html"><img src="icons/icon-settings.svg" height="40" alt="settings"></a>
+    </div> <!-- end sidebar -->
+
+    <div class="content-wrapper">
+
+      <div class="level1">
+        <div class="box1a">
+          <h2>Dashboard</h2>
+        </div>
+        <div class="box1b">
+          <input type="text" class="search-box" placeholder="Search">
+          <div id="magnify"><img src="icons/icon-magnifying-glass.svg" height="14" alt="search"></div>
+        </div>
+      </div> <!-- end level1 -->
+
+      <div class="level2">
+
+        <div class="alert green-alert" style="display: none">
+            <p><strong>Alert</strong>&nbsp; Capicola leberkas, turducken bresaola hamburger brisket.</p>
+            <img class="close-x" src="icons/icon-close-x.svg" height="16" alt="close">
+        </div>
+        <div class="alert green-alert" style="display: none">
+            <p><strong>Alert</strong>&nbsp; Porchetta burgdoggen pork chop picanha short loin sirloin.</p>
+            <img class="close-x" src="icons/icon-close-x.svg" height="16" alt="close">
+        </div>
+        <div class="alert">
+            <p><strong>Alert</strong>&nbsp; Consequat kielbasa est duis pariatur ullamco hamburger.</p>
+            <img class="close-x" src="icons/icon-close-x.svg" height="16" alt="close">
+        </div>
+      </div> <!-- end level2 -->
+
+      <div class="level3">
+        <div class="box3a">
+          <h3>TRAFFIC</h3>
+          <div class="time-span">
+            <ul>
+              <li id="time-span-hourly" >Hourly</li>
+              <li id="time-span-daily" >Daily</li>
+              <li id="time-span-weekly" >Weekly</li>
+              <li id="time-span-monthly" class="highlighted">Monthly</li>
+            </ul>
+          </div> <!--end time-span -->
+        </div> <!--end box3a -->
+
+        <div class="box3b">
+           <canvas id="lineChart"></canvas>
+        </div>
+      </div> <!-- end level3 -->
+
+      <div class="level4">
+
+        <div class="box4a"> 
+          <div class="box4aa">
+          <h3>DAILY TRAFFIC</h3> 
+          </div>
+          <div class="box4ab"> 
+            <canvas id="barChart"></canvas>
+          </div>
+        </div> <!-- end box4a -->
+
+        <div class="box4b">
+          <div class="box4ba"> 
+            <h3>MOBILE USERS</h3>
+          </div>
+          <div class="box4bb"> 
+            <canvas id="doughnutChart"></canvas>
+          </div>
+        </div> <!-- end box4b -->
+      </div> <!-- end level4 -->
+
+      <div class="level5">
+
+        <div class="box5a">
+          <h3>SOCIAL STATS</h3>
+        </div> <!-- end box5a -->
+        <div class="box5b">
+          <div class="social-tile">
+            <div class="social-tile-1a">
+              <div class="icon-background">
+                <img src="icons/icon-twitter.svg" alt="twitter" height="30">
+              </div> <!-- end icon-background -->
+            </div> <!-- end social-tile-1a -->
+            <div class="social-tile-1b">
+              <h4>Twitter</h4>
+              <p>10,345</p>
+            </div> <!-- end social-tile 1b -->
+          </div> <!-- end social-tile -->
+          <div class="social-tile">
+            <div class="social-tile-2a">
+              <div class="icon-background">
+                <img src="icons/icon-facebook.svg" alt="facebook" height="30">
+              </div> <!-- end icon-background -->
+            </div> <!-- end social-tile-1a -->
+            <div class="social-tile-2b">
+              <h4>Facebook</h4>
+              <p>8,739</p>
+            </div> <!-- end social-tile 1b -->
+          </div> <!-- end social-tile -->
+          <div class="social-tile">
+            <div class="social-tile-3a">
+              <div class="icon-background">
+                <img src="icons/icon-google-plus.svg" alt="google plus" height="30">
+              </div> <!-- end icon-background -->
+            </div> <!-- end social-tile-1a -->
+            <div class="social-tile-3b">
+              <h4>Google+</h4>
+              <p>2,530</p>
+            </div> <!-- end social-tile 1b -->
+          </div> <!-- end social-tile -->
+        </div> <!-- end box5b -->
+      </div> <!-- end level5 -->
+
+      <div class="level6">
+
+        <div class="box6a"> 
+          <div class="box6aa"> 
+            <h3>NEW MEMBERS</h3>
+          </div> <!-- end box6aa -->
+          <div class="box6ab">
+
+
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/1" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Alex Anderson</h5>
+                <a href="mailto:aanderson@example.com"><p>aanderson@example.com</p></a>
+              </div>
+              <div class="new-member-c">
+                <p>10/15/15</p>
+              </div>
+            </div> <!-- end new-member -->
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/2" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Berny Brunswick</h5>
+                <a href="mailto:bbrunswick@example.com"><p>bbrunswick@example.com</p></a>
+              </div>
+              <div class="new-member-c">
+                <p>10/15/15</p>
+              </div>
+            </div> <!-- end new-member -->
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/3" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Cas Cutter</h5>
+                <a href="mailto:ccutter@example.com"><p>ccutter@example.com</p></a>
+              </div>
+              <div class="new-member-c">
+                <p>10/15/15</p>
+              </div>
+            </div> <!-- end new-member -->
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/4" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Joss Johnson</h5>
+                <a href="mailto:jjohnson@example.com"><p>jjohnson@example.com</p></a>
+              </div>
+              <div class="new-member-c">
+                <p>10/15/15</p>
+              </div>
+            </div> <!-- end new-member -->
+
+          </div> <!-- end box6ab -->
+        </div> <!-- end box6a -->
+        <div class="box6b"> 
+          <div class="box6ba">
+            <h3>RECENT ACTIVITY</h3>
+          </div> <!-- end box6ba -->
+          <div class="box6bb">
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/6" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Mel Martinson commented on YourApp's SEO Tips</h5>
+                <p>4 hours ago</p>
+              </div>
+              <div class="new-member-c">
+                <img src="icons/right-arrow.svg" height="20" alt="arrow">
+              </div>
+            </div> <!-- end new-member -->
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/7" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Sacha Saunderson liked the post Facebook's Changes for 2016</h5>
+                <p>5 hours ago</p>
+              </div>
+              <div class="new-member-c">
+                <img src="icons/right-arrow.svg" height="20"  alt="arrow">
+              </div>
+            </div> <!-- end new-member -->
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/8" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Terry Tanenbaum commented on Facebook's Changes for 2016</h5>
+                <p>5 hours ago</p>
+              </div>
+              <div class="new-member-c">
+                <img src="icons/right-arrow.svg" height="20"  alt="arrow">
+              </div>
+            </div> <!-- end new-member -->
+
+            <div class="new-member">
+              <div class="new-member-a">
+                <img src="http://lorempixel.com/50/50/people/9" alt="avatar picture"/>
+              </div>
+              <div class="new-member-b">
+                <h5>Val Vickerson posted in YourApp's SEO Tips</h5>
+                <p>1 day ago</p>
+              </div>
+              <div class="new-member-c">
+                <img src="icons/right-arrow.svg" height="20"  alt="arrow">
+              </div>
+            </div> <!-- end new-member -->
+          </div> <!-- end box6bb -->
+        </div> <!-- end box6b -->
+      </div> <!-- end level6 -->
+
+      <div class="level7">
+
+          <div class="box7a"> 
+          <h3>MESSAGE USER</h3>
+          <div class="box7aa"> 
+            
+            <form  id="message-user-form">
+              <input id="user-search" autofocus type="text" name="q" placeholder="Search for User ..." value="">
+              <textarea rows="4" cols="50" class="user-message" id="user-message-id" placeholder="Message for User..."></textarea>
+              <input type="submit" class="submit" value="SEND">
+            </form>
+          </div>
+        </div> <!-- end box7a -->
+
+        <div class="box7b"> 
+          <div class="box7ba">
+            <h3>SETTINGS</h3>
+          </div> <!-- end box7ba -->
+            <div class="box7bb">
+              <form class="settings-form">
+                <fieldset style="border: none;">
+                  <div class="toggle">
+                    <p>Send Email Notifications</p>
+                    <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffswitch1" checked>
+                      <label class="onoffswitch-label" for="onoffswitch1">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div> <!-- end onoffswitch -->
+                  </div> <!-- end email-toggle -->
+                  
+                  <div class="toggle">
+                    <p>Set Profile to Public</p>
+                    <div class="onoffswitch">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffswitch2" checked>
+                      <label class="onoffswitch-label" for="onoffswitch2">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div> <!-- end onoffswitch -->
+                  </div> <!-- end email-toggle -->
+                  
+                  <div class="select-container">
+                    <select name="timezone" id="time-zone">
+                      <option selected="selected" disabled="disabled">Select Timezone</option>
+                      <option value="Eastern">Eastern</option>
+                      <option value="Central">Central</option>
+                      <option value="Mountain">Mountain</option>
+                      <option value="Pacific">Pacific</option>
+                    </select>
+                  </div>
+                  <div class="button-div">
+                    <button id="save-button" type="button" value="save" onclick="save()">SAVE</button>
+                    <button id="cancel-button" type="button" value="delete" onclick="wis()">CANCEL</button>
+                  </div> <!-- end button-div -->
+                </fieldset>
+              </form>
+          </div> <!-- end box7bb -->
+        </div> <!-- end box7b -->
+      </div> <!-- end level7 -->
+    </div> <!-- end content-wrapper -->
+  </div> <!-- end mega-wrapper -->
+
+  <footer>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="plugins/auto-complete/jquery.auto-complete.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+  <script src="js/chart-script.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

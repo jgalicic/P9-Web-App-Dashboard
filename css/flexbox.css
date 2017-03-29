@@ -1,0 +1,189 @@
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.avatar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.home {
+	margin-right: auto;
+}
+
+.mega-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.level1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.box1a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.box1b {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.alert {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.close-x {
+	margin-left: auto;
+}
+
+.level3 {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+}
+
+.box3a {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.box3b {
+	display: flex;
+	justify-content: center;
+}
+
+.level4 {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.box4ab,
+.box4bb {
+	display: flex;
+	justify-content: center;
+}
+
+.level5 {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.box5b {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.social-tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.social-tile-1a,
+.social-tile-2a,
+.social-tile-3a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.level6 {
+	display: flex;
+	flex-direction: column;
+}
+
+.new-member {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.new-member-a, .new-member-b, .new-member-c {
+	align-self: center;
+}
+
+.new-member-c {
+	margin-left: auto;
+}
+
+.level7 {
+	display: flex;
+	flex-direction: column;
+}
+
+.toggle {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.button-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+/*------------------------------------
+Media Queries
+-------------------------------------*/
+
+@media (min-width: 768px){
+
+	.mega-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.sidebar {
+		height: 100%;
+		width: 70px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.sidebar img {
+		margin: 15px 0;
+	}
+	.level4,
+	.level6,
+	.level7 {
+		flex-direction: row;
+	}
+
+	.social-tile {
+		flex-direction: row;
+		justify-content: flex-start;
+
+	}
+
+
+
+
+}
+
+@media (min-width: 1024px){
+
+
+}

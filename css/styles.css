@@ -1,0 +1,603 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important; /* fixes horizontal scrolling issue */
+  font-family: verdana, sans-serif;
+}
+
+.home h1 {
+	font-weight: normal;
+	color: white;
+	font-size: 1.6em;
+}
+
+h1 sup {
+	font-size: .3em;
+}
+
+h2, h3, h5 {
+	color: #5B5B5B;
+}
+
+h3 {
+	margin: 15px;
+}
+
+h4 {
+	color: #4a486d; /* dark-purple */
+}
+
+a:link {
+	text-decoration: none;
+	color: #7779b5;  /* light-purple */
+}
+
+a:hover {
+	text-decoration: underline;
+}	
+
+a:visited {
+	color: #4a486d; /* dark-purple */
+}
+
+/*------------------------------------
+Header
+-------------------------------------*/
+
+header {
+	width: 100%;
+	background-color: #7779b5;  /* light-purple */
+	height: 70px;
+}
+
+.home {
+	margin-left: 15px;
+}
+
+.bell-icon {
+	margin-right: 15px;
+	padding-right: 10px;
+	border-right: 2px solid #aaa;
+	cursor: pointer;
+}
+
+#indicator {
+	height: 10px;
+	width: 10px;
+	background-color: #8def6e; /* bright green */
+	border-radius: 50%;
+	position: absolute;
+	right: 226px;
+	top: 10px;
+}
+
+.avatar {
+	width: 200px;
+	}
+
+.avatar img {
+	border-radius: 50%;
+}
+
+.avatar p {
+	font-size: 1em;
+	color: white;
+	margin-left: 10px;
+	}
+
+/*------------------------------------
+Mega Wrapper
+-------------------------------------*/
+
+.mega-wrapper {
+	margin: 0 auto;
+	height: 100vh;
+}
+
+/*------------------------------------
+Sidebar
+-------------------------------------*/
+
+.sidebar {
+	height: 70px;
+	width: 100%;
+	background-color: #4a486d; /* dark-purple */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sidebar img {
+	padding: 5px 15px 3px 15px;
+	margin: 5px 5px 3px 5px;
+}
+
+.sidebar a:hover {
+	background-color: #a2d891; /* light green */
+	}
+
+
+
+/*------------------------------------
+Main Content Area
+-------------------------------------*/
+
+.content-wrapper {
+	width: 100%;
+}
+
+/*------------------------------------
+Dashboard heading & Search
+-------------------------------------*/
+
+.level1 {
+	width: 100%;
+}
+
+.box1a {
+	height: 60px;
+	width: 240px;
+	border-right: 2px solid #bbb;
+
+}
+
+.box1b {
+	border-bottom: 2px solid #bbb;
+	background-color: #F7F6F5;
+	width: 100%;
+}
+
+.search-box {
+	background-color: white;
+	font-size: 1.2em;
+	padding: 2px 0px 2px 5px;
+	margin: 0 10px;
+	width: 300px;
+	border: 2px solid #bbb;
+	border-radius: 3px;
+}
+
+#magnify {
+	position: relative;
+	right: 35px;
+	padding: 5px;
+	}
+
+/*------------------------------------
+Alerts
+-------------------------------------*/
+
+.level2 {
+	width: 100%;
+	padding: 10px 10px 0 10px;
+}
+
+.alert {
+	width: 100%;
+	height: 40px;
+	background-color: #7779b5;  /* light-purple */
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+.alert p {
+	margin-left: 15px;
+	color: white;
+}
+
+.green-alert {
+	background-color: #7CB4B8; /* light green */
+}
+
+.close-x {
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+/*------------------------------------
+Traffic
+-------------------------------------*/
+
+.level3 {
+	width: 100%;
+	padding: 10px;
+}
+
+.time-span ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0 5px 0 5px;
+	margin: 0 auto;
+}
+
+.time-span ul li {
+	color: #333;
+	display: inline-block;
+	margin: 5px auto;
+	padding: 5px 2px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.highlighted {
+	background-color: #a2d891; /* light green */
+	padding: 2px 4px;
+	border-radius: 15px;
+}
+
+.box3b {
+	max-height: 200px;
+	width: 100%;
+}
+
+.box3b canvas {
+	max-width: 400px;
+}
+
+ /*------------------------------------
+Daily Traffic & Mobile Users
+-------------------------------------*/
+
+.level4 {
+	width: 100%;
+	border-top: 2px solid #bbb;
+}
+
+.box4a,
+.box4b {
+	width: 100%;
+}
+
+.box4ab,
+.box4bb {
+	max-height: 200px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.box4ab canvas {
+	max-width: 400px;
+}
+
+.box4bb canvas {
+	max-width: 250px;
+}
+
+.box4ba {
+	border-top: 2px solid #bbb;
+}
+
+/*------------------------------------
+Social Stats
+-------------------------------------*/
+
+.level5 {
+	width: 100%;
+	border-top: 2px solid #bbb;
+}
+
+.social-tile {
+	text-align: center;
+	width: 200px;
+	height: 100%;
+	background-color:  #F7F6F5;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid  #bbb;
+}
+
+.social-tile p {
+	color: #555;
+	font-size: 1.4em;
+}
+
+.icon-background {
+	height: 50px;
+	width: 50px;
+	background-color:  #4a486d; /* dark-purple */
+	border-radius: 50%;
+}
+
+.icon-background img {
+	position: relative;
+	top: 10px;
+	height: 30px;
+	width: 30px;
+}
+
+/*------------------------------------
+New Members & Recent Activity
+-------------------------------------*/
+
+.level6 {
+
+	width: 100%;
+	border-top: 2px solid #bbb;
+}
+
+.level6 img {
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.box6a {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.box6b {
+	width: 100%;
+	border-top: 2px solid #bbb;
+}
+
+.box6ab .new-member,
+.box6bb .new-member {
+	border-bottom: 1px solid #bbb;
+	}
+
+.new-member:last-child {
+	border-bottom: none;
+}
+
+.new-member-a {
+	padding-right: 15px;
+}
+
+.box6ab .new-member-b {
+	padding-left: 3px;
+	width: 60%;
+}
+
+.new-member-b p {
+	font-size: .8em;
+}
+
+.new-member-c {
+	font-size: .8em;
+	width: 19%;
+}
+
+.new-member-c img {
+    cursor: pointer;
+}
+
+.box6bb .new-member-b {
+	padding-left: 3px;
+	width: 85%;
+}
+
+.box6ab, .box6bb {
+	margin-right: 15px;
+}
+
+/*------------------------------------
+Message User & Settings
+-------------------------------------*/
+
+.level7 {
+	width: 100%;
+	border-top: 2px solid #bbb;
+}
+
+.box7a {
+	width: 100%;
+}
+
+#user-search,
+.user-message {
+	margin: 10px;
+	font-size: 1em;
+	padding: 2px 2px 2px 5px;
+	outline: none;
+	background-color:  #F7F6F5;
+	border: 2px solid #bbb;
+	border-radius: 3px;
+	width: 90%;
+}
+
+#user-message-id {
+	height: 109px;
+}
+
+.box7aa {
+	margin-left: 5px;
+	}
+
+#message-user-form .submit {
+	color: white;
+	margin: 10px;
+	background-color:  #7779b5;  /* light-purple */
+	font-size: 1em;
+	text-align: center;
+	width: 90%;
+	height: 40px;
+	border: none;
+	border-radius: 3px;
+
+}
+
+.box7b {
+	width: 100%;
+}
+
+.box7bb select {
+	width: 90%;
+	margin: 10px;
+}
+
+/*------------------------------------
+On/Off Switch
+-------------------------------------*/
+
+.onoffswitch {
+	width: 90px;
+	min-width: 90px;
+    position: relative;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 23px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color:  #7779b5;  /* light-purple */ 
+    color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #878787;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 20px; height: 24px; margin: 5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/* On/Off Switch designed by Anna Mitsinga of Proto.io */
+
+.toggle {
+	margin: 0 15px 5px 15px;
+	padding: 5px;
+	font-size: 1em;
+	color: #333;
+}
+
+.toggle p {
+	min-width: 220px;
+	position: relative;
+	top: 7px;
+	right: 5px;
+	margin-right: 5px;
+}
+
+.select-container {
+	width: 100%;
+	margin: 15px 5px;
+}
+
+.select-container select {
+	height: 40px;
+}
+
+.button-div {
+	margin-right: 15px;
+}
+
+.button-div button {
+	color: white;
+	margin: 0 15px 10px 15px;
+	background-color:  #7779b5;  /* light-purple */
+	font-size: 1em;
+	text-align: center;
+	height: 40px;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+}
+
+#cancel-button {
+	background-color: gray;
+	}
+
+
+/*------------------------------------
+Media Queries
+-------------------------------------*/
+
+
+@media (min-width: 768px){
+
+	.box3b {
+		max-height: 350px;
+	}
+
+	.box3b canvas {
+		max-width: 700px;
+	}
+
+	.time-span ul li {
+		padding: 5px 10px;
+	}
+
+	.box4ba,
+	.box6b {
+		border-top: none;
+	}
+
+	.box4a,
+	.box6a {
+		border-right: 2px solid #bbb;
+	}
+
+	.social-tile {
+		padding: 10px;
+		width: 250px;
+	}
+
+	.social-tile p {
+		font-size: 1.8em;
+	}
+	.social-tile h4 {
+		text-align: left;
+	}
+	.icon-background {
+		position: relative;
+		top: 2px;
+		margin: 0 10px;
+	}
+	.box5b {
+		margin-bottom: 20px;
+	}
+	.box7a {
+		border-right: 2px solid #bbb;
+	}
+
+}
+
+
+@media (min-width: 1024px){
+	.social-tile {
+		margin: 10px 20px;
+		width: 250px;
+	}
+
+	.mega-wrapper {
+		max-width: 1100px;
+	}
+
+}
+
+@media (min-width: 1100px){
+	.level1, .level2, .level3, .level4, .level5,
+	.level6, .level7 {
+		border-right: 2px solid #bbb;
+	}
+}
